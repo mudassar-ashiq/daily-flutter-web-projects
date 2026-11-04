@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudassar Ashiq - Portfolio</title>
+  <meta name="description" content="Personal portfolio page of Mudassar Ashiq, a BSSE student and Flutter developer from Sahiwal, Pakistan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Mudassar Ashiq</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="intro container">
+      <h1>Hi, I'm Mudassar Ashiq</h1>
+      <p class="intro-line">I'm a BSSE student in my 5th semester at Riphah International University, Sahiwal Campus. I build mobile apps with Flutter and Dart, and I use Firebase for backend work.</p>
+      <p>This page is separate from my Flutter work. I made it with plain HTML, CSS and a bit of JavaScript to practise web development.</p>
+      <a class="btn" href="https://github.com/mudassar-ashiq" target="_blank" rel="noopener">My GitHub</a>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>I am studying software engineering at Riphah International University, Sahiwal Campus, and I am from Sahiwal, Punjab, Pakistan.</p>
+      <p>Most of my time goes into learning Flutter and building small apps to practise. Right now I am also learning web development alongside it, starting with the basics — writing proper HTML pages, styling them with CSS and adding simple JavaScript.</p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Flutter</li>
+        <li>Dart</li>
+        <li>Firebase</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="section-note">Two apps I have built so far, both in Flutter.</p>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>MoneyGods Transport</h3>
+          <p>A goods transport app with three panels — admin, driver and customer. Drivers share their location during a trip so customers can track their booking, and the fare is worked out from the distance in kilometres and the current diesel price.</p>
+          <p class="tools">Flutter · Dart · Firebase · Google Maps</p>
+        </article>
+
+        <article class="project-card">
+          <h3>ShopEase</h3>
+          <p>A small shopping app with a login screen, a product list and a product details screen where the total updates as you change the quantity. It was a class project for mobile app development.</p>
+          <p class="tools">Flutter · Dart</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>My code is on GitHub: <a href="https://github.com/mudassar-ashiq" target="_blank" rel="noopener">github.com/mudassar-ashiq</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mudassar Ashiq · Sahiwal, Pakistan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
