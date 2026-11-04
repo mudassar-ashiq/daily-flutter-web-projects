@@ -33,7 +33,6 @@ const List<Skill> skills = [
   Skill('Google Maps', 'Maps, live GPS tracking and location'),
   Skill('Clean Architecture', 'Keeping the code organised in layers'),
   Skill('Material 3 UI/UX', 'Design system for my app interfaces'),
-  Skill('Python', 'Scripting and university coursework'),
   Skill('HTML / CSS', 'The foundations of the web'),
 ];
 
