@@ -1,6 +1,7 @@
 # Daily Projects
 
-I am posting one Flutter project and one web project here every day.
+I am posting one project here every day. The type takes turns —
+one day a Flutter project, the next day a web project.
 They are kept separate — Flutter projects are in folders named
 `day-XX-flutter` and web projects in folders named `day-XX-web`.
 
