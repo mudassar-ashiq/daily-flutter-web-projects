@@ -10,12 +10,14 @@ They are kept separate — Flutter projects are in folders named
 | Day | Date | Project | What I practised |
 | --- | --- | --- | --- |
 | 1 | 4 Nov 2026 | Portfolio site (Flutter) | Responsive layout with LayoutBuilder, splitting code into files, widget tests |
+| 2 | 5 Nov 2026 | BMI calculator | Form validation, splitting logic out of the UI, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
 | Day | Date | Project | What I practised |
 | --- | --- | --- | --- |
 | 1 | 4 Nov 2026 | Portfolio page | Semantic HTML, responsive CSS, a little JavaScript |
+| 3 | 6 Nov 2026 | Landing page (bakery) | Responsive layout, mobile menu, form validation in JS |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also
