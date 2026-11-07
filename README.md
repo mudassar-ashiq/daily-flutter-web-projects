@@ -11,6 +11,7 @@ They are kept separate — Flutter projects are in folders named
 | --- | --- | --- | --- |
 | 1 | 4 Nov 2026 | Portfolio site (Flutter) | Responsive layout with LayoutBuilder, splitting code into files, widget tests |
 | 2 | 5 Nov 2026 | BMI calculator | Form validation, splitting logic out of the UI, unit and widget tests |
+| 4 | 7 Nov 2026 | Expense tracker | Adding expenses, monthly total, spending by category, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
