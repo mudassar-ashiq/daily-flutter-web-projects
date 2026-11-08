@@ -19,6 +19,7 @@ They are kept separate — Flutter projects are in folders named
 | --- | --- | --- | --- |
 | 1 | 4 Nov 2026 | Portfolio page | Semantic HTML, responsive CSS, a little JavaScript |
 | 3 | 6 Nov 2026 | Landing page (bakery) | Responsive layout, mobile menu, form validation in JS |
+| 5 | 8 Nov 2026 | To-do list | Adding and deleting tasks, filtering, saving with localStorage |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today — a simple to-do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Today</h1>
+      <p class="subtitle">A small to-do list. It saves in your browser, so your tasks are still here when you come back.</p>
+    </header>
+
+    <form id="add-form" class="add-form" autocomplete="off">
+      <label class="visually-hidden" for="new-task">Add a task</label>
+      <input type="text" id="new-task" placeholder="Add a task…" maxlength="120">
+      <button type="submit">Add</button>
+    </form>
+    <p id="form-error" class="form-error" hidden>Write something first — the task can't be empty.</p>
+
+    <div class="filters" role="group" aria-label="Show tasks">
+      <button type="button" data-filter="all" class="active">All</button>
+      <button type="button" data-filter="active">To do</button>
+      <button type="button" data-filter="done">Done</button>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <p id="empty-message" class="empty-message">Nothing here yet. Add your first task above.</p>
+
+    <footer class="list-footer">
+      <span id="count">0 tasks left</span>
+      <button type="button" id="clear-done">Clear done</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

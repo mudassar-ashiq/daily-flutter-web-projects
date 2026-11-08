@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f4f1ea;
+  color: #2b2b2b;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 0 20px 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  color: #5c5648;
+  margin: 0 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+}
+
+.add-form input {
+  flex: 1;
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #b8b0a0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.add-form input:focus {
+  outline: 2px solid #3f6b4f;
+  outline-offset: 1px;
+}
+
+.add-form button {
+  font: inherit;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #3f6b4f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background: #345a42;
+}
+
+.form-error {
+  color: #8a3b2e;
+  font-size: 0.9rem;
+  margin: 8px 0 0;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 12px;
+}
+
+.filters button {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border: 1px solid #b8b0a0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #2b2b2b;
+  border-color: #2b2b2b;
+  color: #fff;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #d8d2c4;
+}
+
+.task-list li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3f6b4f;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-list li .task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-list li.done .task-text {
+  color: #8a8378;
+  text-decoration: line-through;
+}
+
+.task-list li .delete {
+  border: none;
+  background: none;
+  color: #8a8378;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.task-list li .delete:hover {
+  color: #8a3b2e;
+}
+
+.empty-message {
+  color: #5c5648;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #5c5648;
+}
+
+.list-footer button {
+  font: inherit;
+  font-size: 0.9rem;
+  border: none;
+  background: none;
+  color: #3f6b4f;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .page {
+    margin-top: 24px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
