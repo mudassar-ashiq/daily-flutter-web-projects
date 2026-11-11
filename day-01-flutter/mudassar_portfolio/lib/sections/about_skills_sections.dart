@@ -29,9 +29,9 @@ class AboutSection extends StatelessWidget {
               'Punjab, Pakistan. My focus is Flutter development: I '
               'design and build complete apps — login, cloud data, '
               'live maps — and I try to keep the design simple and '
-              'easy to use. MoneyGods Transport, a goods-transport '
-              'app with Admin, Driver and Customer panels, is the '
-              'biggest project I have built so far.',
+              'easy to use. The Riphah University Portal, a student '
+              'portal app with real accounts and an admin panel, is '
+              'the biggest project I have built so far.',
               style: theme.textTheme.bodyLarge,
             ),
           ),
