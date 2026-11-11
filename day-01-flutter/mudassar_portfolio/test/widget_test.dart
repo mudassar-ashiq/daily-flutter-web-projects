@@ -22,7 +22,7 @@ void main() {
     test('portfolio data is complete', () {
       expect(skills, isNotEmpty);
       expect(projects, hasLength(2));
-      expect(projects.first.title, 'Riphah University Portal');
+      expect(projects.first.title, 'MoneyGods Transport');
       expect(projects.last.title, 'ShopEase');
       expect(githubUrl, 'https://github.com/mudassar-ashiq');
     });
@@ -45,7 +45,7 @@ void main() {
     // Sections exist in the page.
     expect(find.text('About Me'), findsWidgets);
     expect(find.text('Featured Projects'), findsWidgets);
-    expect(find.text('Riphah University Portal'), findsWidgets);
+    expect(find.text('MoneyGods Transport'), findsWidgets);
     expect(find.text('ShopEase'), findsWidgets);
   });
 

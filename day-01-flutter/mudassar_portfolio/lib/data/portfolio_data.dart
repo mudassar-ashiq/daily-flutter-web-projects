@@ -54,19 +54,20 @@ class Project {
 
 const List<Project> projects = [
   Project(
-    title: 'Riphah University Portal',
-    tagline: 'University portal app — Flutter & Firebase',
+    title: 'MoneyGods Transport',
+    tagline: 'Goods transport app — Flutter & Firebase',
     description:
-        'A student portal for Riphah International University, '
-        'Sahiwal Campus, with real student accounts, courses, '
-        'timetable, results, fees, attendance and notices.',
+        'A complete goods transport app for Mudassar and Mubashir '
+        'MoneyGods Transport Company, with separate Admin, Driver and '
+        'Customer panels, live trip tracking and a transparent fare '
+        'system.',
     highlights: [
-      'Real sign-up and login with Firebase Auth',
-      'Personal results, fees and attendance for each student',
-      'Real class timetable and faculty directory',
-      'Admin panel for posting notices',
+      'Admin, Driver and Customer panels with role-based routing',
+      'Live GPS tracking on Google Maps during active trips',
+      'Fare = distance (KM) × vehicle rate + diesel-price adjustment',
+      'Vehicle categories: Pickup, Shahzor, Mazda and 10 Wheeler',
     ],
-    tech: ['Flutter', 'Firebase', 'Firestore', 'Material 3'],
+    tech: ['Flutter', 'Firebase', 'Riverpod', 'GoRouter', 'Google Maps'],
   ),
   Project(
     title: 'ShopEase',

@@ -4,7 +4,7 @@ Day 1 of my daily project series.
 
 This is my personal portfolio website, made with Flutter and Dart.
 It has a short intro, an about section, my skills, and the two
-projects I have worked on so far (Riphah University Portal and ShopEase).
+projects I have worked on so far (MoneyGods Transport and ShopEase).
 There is also a link to my GitHub at the top and in the footer.
 
 ## What is in it
