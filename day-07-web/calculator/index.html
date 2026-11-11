@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Calculator</h1>
+    <p class="subtitle">A plain calculator that works with the mouse or the keyboard.</p>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display">
+        <p class="expression" id="expression" aria-live="polite">&nbsp;</p>
+        <p class="result" id="result">0</p>
+      </div>
+
+      <div class="keys">
+        <button type="button" class="key utility" data-action="clear">C</button>
+        <button type="button" class="key utility" data-action="backspace">&larr;</button>
+        <button type="button" class="key utility" data-action="percent">%</button>
+        <button type="button" class="key operator" data-action="divide">&divide;</button>
+
+        <button type="button" class="key" data-digit="7">7</button>
+        <button type="button" class="key" data-digit="8">8</button>
+        <button type="button" class="key" data-digit="9">9</button>
+        <button type="button" class="key operator" data-action="multiply">&times;</button>
+
+        <button type="button" class="key" data-digit="4">4</button>
+        <button type="button" class="key" data-digit="5">5</button>
+        <button type="button" class="key" data-digit="6">6</button>
+        <button type="button" class="key operator" data-action="subtract">&minus;</button>
+
+        <button type="button" class="key" data-digit="1">1</button>
+        <button type="button" class="key" data-digit="2">2</button>
+        <button type="button" class="key" data-digit="3">3</button>
+        <button type="button" class="key operator" data-action="add">+</button>
+
+        <button type="button" class="key" data-action="negate">+/&minus;</button>
+        <button type="button" class="key" data-digit="0">0</button>
+        <button type="button" class="key" data-action="decimal">.</button>
+        <button type="button" class="key equals" data-action="equals">=</button>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="history-head">
+        <h2>History</h2>
+        <button type="button" id="clear-history">Clear history</button>
+      </div>
+      <ul id="history-list"></ul>
+      <p class="empty-history" id="empty-history">Nothing calculated yet.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
