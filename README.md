@@ -23,6 +23,7 @@ They are kept separate — Flutter projects are in folders named
 | 3 | 6 Nov 2026 | Landing page (bakery) | Responsive layout, mobile menu, form validation in JS |
 | 5 | 8 Nov 2026 | To-do list | Adding and deleting tasks, filtering, saving with localStorage |
 | 7 | 10 Nov 2026 | Calculator | Basic arithmetic, keyboard input, calculation history with localStorage |
+| 9 | 12 Nov 2026 | Clock & stopwatch | Live clock with 12/24-hour switch, stopwatch with laps, keyboard shortcuts |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock &amp; Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Clock &amp; Stopwatch</h1>
+    <p class="subtitle">The time right now, and a stopwatch for timing things.</p>
+
+    <section class="card clock-card">
+      <h2>Current time</h2>
+      <p class="time" id="clock-time">--:--:--</p>
+      <p class="date" id="clock-date">&nbsp;</p>
+      <div class="row">
+        <button id="format-toggle" type="button">Switch to 24-hour</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stopwatch</h2>
+      <p class="time stopwatch-time" id="stopwatch-time">00:00.00</p>
+      <div class="row buttons">
+        <button id="start-pause" type="button" class="primary">Start</button>
+        <button id="lap" type="button" disabled>Lap</button>
+        <button id="reset" type="button" disabled>Reset</button>
+      </div>
+      <ol class="laps" id="laps"></ol>
+      <p class="hint">Keyboard: Space starts or pauses, L records a lap, R resets.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
