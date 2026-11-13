@@ -14,6 +14,7 @@ They are kept separate — Flutter projects are in folders named
 | 4 | 7 Nov 2026 | Expense tracker | Adding expenses, monthly total, spending by category, unit and widget tests |
 | 6 | 9 Nov 2026 | To-do app | Adding tasks with priority and due dates, filtering, saving with shared_preferences, unit and widget tests |
 | 8 | 11 Nov 2026 | Quiz app | Ten questions with instant right/wrong feedback, progress bar, score screen, unit and widget tests |
+| 10 | 13 Nov 2026 | Notes app | Adding, editing, pinning and searching notes, saving with shared_preferences, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
