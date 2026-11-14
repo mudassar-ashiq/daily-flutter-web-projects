@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #eceff1;
+  color: #263238;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  color: #607d8b;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  font: inherit;
+  padding: 9px 10px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  background: #fff;
+  color: #263238;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #37474f;
+}
+
+.field input.invalid,
+.field select.invalid {
+  border-color: #c62828;
+  background: #fdf3f3;
+}
+
+.field input.valid,
+.field select.valid {
+  border-color: #2e7d32;
+}
+
+.hint {
+  color: #78909c;
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+
+.error {
+  color: #c62828;
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+  min-height: 1.2em;
+}
+
+.form-error {
+  color: #c62828;
+  font-size: 0.9rem;
+  margin: 12px 0 0;
+}
+
+.check {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.check input {
+  width: auto;
+  accent-color: #37474f;
+}
+
+.check label {
+  font-weight: 400;
+  margin: 0;
+  flex: 1;
+}
+
+.check .error {
+  flex-basis: 100%;
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 6px;
+  background: #eceff1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.strength-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #c62828;
+  border-radius: 3px;
+}
+
+.strength-bar span.medium {
+  background: #ef6c00;
+}
+
+.strength-bar span.strong {
+  background: #2e7d32;
+}
+
+#strength-label {
+  font-size: 0.85rem;
+  color: #607d8b;
+  min-width: 52px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  font: inherit;
+  padding: 9px 18px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  background: #fff;
+  color: #263238;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f5f7f8;
+}
+
+button.primary {
+  background: #37474f;
+  border-color: #37474f;
+  color: #fff;
+}
+
+button.primary:hover {
+  background: #455a64;
+}
+
+.success h2 {
+  color: #2e7d32;
+}
+
+.muted {
+  color: #607d8b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}

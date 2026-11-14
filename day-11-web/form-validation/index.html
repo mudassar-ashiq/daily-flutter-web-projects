@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration — Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Course registration</h1>
+    <p class="subtitle">Fill in the form to register for a short course. Each field is checked as you type, and the form only submits when everything is valid.</p>
+
+    <form id="signup-form" class="card" novalidate>
+      <div class="field">
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" name="full-name" autocomplete="name" placeholder="e.g. Ayesha Khan">
+        <p class="error" id="full-name-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="e.g. ayesha@example.com">
+        <p class="error" id="email-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 0300 1234567">
+        <p class="hint">Pakistani mobile, 11 digits starting with 03.</p>
+        <p class="error" id="phone-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob">
+        <p class="error" id="dob-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="course">Course</label>
+        <select id="course" name="course">
+          <option value="">Choose a course…</option>
+          <option value="flutter">Flutter App Development</option>
+          <option value="web">Web Development with HTML, CSS and JavaScript</option>
+          <option value="python">Programming with Python</option>
+          <option value="ui">UI Design Basics</option>
+        </select>
+        <p class="error" id="course-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" placeholder="At least 8 characters">
+        <div class="strength" id="strength" hidden>
+          <div class="strength-bar"><span id="strength-fill"></span></div>
+          <span id="strength-label"></span>
+        </div>
+        <p class="error" id="password-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="confirm-password">Confirm password</label>
+        <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" placeholder="Type the password again">
+        <p class="error" id="confirm-password-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field check">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the course terms and conditions</label>
+        <p class="error" id="terms-error" aria-live="polite"></p>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="primary">Register</button>
+        <button type="button" id="clear-btn">Clear form</button>
+      </div>
+
+      <p class="form-error" id="form-error" aria-live="polite"></p>
+    </form>
+
+    <section class="card success" id="success" hidden>
+      <h2>Registration complete</h2>
+      <p>Thanks, <span id="success-name"></span>. You are registered for <span id="success-course"></span>.</p>
+      <p class="muted">A confirmation email will be sent to <span id="success-email"></span>.</p>
+      <button type="button" id="again-btn">Register another student</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
