@@ -27,6 +27,7 @@ They are kept separate — Flutter projects are in folders named
 | 7 | 10 Nov 2026 | Calculator | Basic arithmetic, keyboard input, calculation history with localStorage |
 | 9 | 12 Nov 2026 | Clock & stopwatch | Live clock with 12/24-hour switch, stopwatch with laps, keyboard shortcuts |
 | 11 | 14 Nov 2026 | Course registration form | Form validation with regex checks, live error messages, password strength meter |
+| 13 | 16 Nov 2026 | Restaurant menu page | Category filters, search, order list with running total |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also

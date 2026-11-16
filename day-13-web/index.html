@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazeez Restaurant — Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div>
+        <h1>Lazeez Restaurant</h1>
+        <p class="tagline">Desi food, cooked fresh — Sahiwal</p>
+      </div>
+      <div class="header-info">
+        <p>Open daily, 12:00 pm – 11:00 pm</p>
+        <p>Dine-in &middot; Takeaway &middot; Home delivery</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu-nav">
+    <div class="wrap">
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-category="all">All dishes</button>
+        <button class="filter-btn" data-category="starters">Starters</button>
+        <button class="filter-btn" data-category="bbq">BBQ</button>
+        <button class="filter-btn" data-category="karahi">Karahi &amp; Handi</button>
+        <button class="filter-btn" data-category="rice">Rice</button>
+        <button class="filter-btn" data-category="breads">Breads &amp; Sides</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+      </div>
+      <input type="search" id="search" placeholder="Search the menu, e.g. karahi" aria-label="Search the menu">
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <p class="results-line" id="results-line"></p>
+    <section class="menu-grid" id="menu-grid"></section>
+
+    <aside class="order-box" id="order-box">
+      <h2>Your order</h2>
+      <p class="order-empty" id="order-empty">Nothing added yet. Tap “Add” on a dish to start an order.</p>
+      <ul class="order-list" id="order-list"></ul>
+      <div class="order-total" id="order-total" hidden>
+        <span>Total</span>
+        <strong id="total-amount">Rs 0</strong>
+      </div>
+      <button class="clear-btn" id="clear-order" hidden>Clear order</button>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Lazeez Restaurant, Main Bazaar Road, Sahiwal — 040 422 0000</p>
+      <p>Prices include GST. Ask the waiter about today's special.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
