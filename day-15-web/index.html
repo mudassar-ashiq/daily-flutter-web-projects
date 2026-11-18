@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-box">
+    <header>
+      <h1>Quick Quiz</h1>
+      <p class="subtitle">Twelve questions, twenty seconds each. Pick a category to start.</p>
+    </header>
+
+    <!-- Start screen -->
+    <section id="start-screen">
+      <div class="categories">
+        <button class="category-btn" data-category="all">All questions</button>
+        <button class="category-btn" data-category="general">General knowledge</button>
+        <button class="category-btn" data-category="science">Science</button>
+        <button class="category-btn" data-category="computing">Computing</button>
+      </div>
+      <p class="best-score" id="best-score"></p>
+      <p class="hint">Tip: you can also press 1–4 on your keyboard to answer.</p>
+    </section>
+
+    <!-- Question screen -->
+    <section id="question-screen" class="hidden">
+      <div class="top-row">
+        <span id="progress-text">Question 1 of 12</span>
+        <span id="timer">20s</span>
+      </div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <h2 id="question-text"></h2>
+      <div class="options" id="options"></div>
+      <p class="feedback" id="feedback"></p>
+      <button id="next-btn" class="primary-btn hidden">Next question</button>
+    </section>
+
+    <!-- Results screen -->
+    <section id="result-screen" class="hidden">
+      <h2>Your score</h2>
+      <p class="final-score"><span id="score">0</span> / <span id="total">12</span></p>
+      <p id="score-message"></p>
+      <p class="best-score" id="result-best"></p>
+      <h3>Answers</h3>
+      <ol id="review-list" class="review-list"></ol>
+      <button id="restart-btn" class="primary-btn">Play again</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

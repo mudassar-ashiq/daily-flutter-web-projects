@@ -28,6 +28,7 @@ They are kept separate — Flutter projects are in folders named
 | 9 | 12 Nov 2026 | Clock & stopwatch | Live clock with 12/24-hour switch, stopwatch with laps, keyboard shortcuts |
 | 11 | 14 Nov 2026 | Course registration form | Form validation with regex checks, live error messages, password strength meter |
 | 13 | 16 Nov 2026 | Restaurant menu page | Category filters, search, order list with running total |
+| 15 | 18 Nov 2026 | Quiz page | Category picker, 20-second timer per question, score screen with answer review, best score in localStorage |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also
