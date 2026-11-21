@@ -17,6 +17,7 @@ They are kept separate — Flutter projects are in folders named
 | 10 | 13 Nov 2026 | Notes app | Adding, editing, pinning and searching notes, saving with shared_preferences, unit and widget tests |
 | 12 | 15 Nov 2026 | Weather app | Weather models with fromJson/toJson, a service class, °C/°F switch, hourly and 5-day forecast, unit and widget tests |
 | 16 | 19 Nov 2026 | Habit tracker | Adding habits with a weekly target, marking days done, streaks, week view, saving with shared_preferences, unit and widget tests |
+| 18 | 21 Nov 2026 | Recipe book | Ten recipes with ingredients and steps, search by name or ingredient, category filters, favourites, add your own recipes, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
@@ -30,6 +31,7 @@ They are kept separate — Flutter projects are in folders named
 | 11 | 14 Nov 2026 | Course registration form | Form validation with regex checks, live error messages, password strength meter |
 | 13 | 16 Nov 2026 | Restaurant menu page | Category filters, search, order list with running total |
 | 15 | 18 Nov 2026 | Quiz page | Category picker, 20-second timer per question, score screen with answer review, best score in localStorage |
+| 17 | 20 Nov 2026 | Small shop page | Product list with prices in Rs, category filters and search, cart with quantities and running total, free delivery over Rs 1,000, cart saved in localStorage |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also
