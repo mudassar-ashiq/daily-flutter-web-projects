@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakistan Weather — City Weather Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-inner">
+      <div>
+        <h1>Pakistan Weather</h1>
+        <p class="subtitle">Today's weather in eight cities, on one page.</p>
+      </div>
+      <p class="updated">Updated: Sunday, 22 November 2026 &middot; 9:30 am PKT</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Weather controls">
+      <label class="search-box">
+        <span class="visually-hidden">Search for a city</span>
+        <input type="search" id="search" placeholder="Search a city, e.g. Lahore" autocomplete="off">
+      </label>
+      <div class="unit-toggle" role="group" aria-label="Temperature unit">
+        <button type="button" id="btn-c" class="unit-btn active" aria-pressed="true">&deg;C</button>
+        <button type="button" id="btn-f" class="unit-btn" aria-pressed="false">&deg;F</button>
+      </div>
+      <label class="sort-box">
+        Sort by
+        <select id="sort">
+          <option value="name">City name (A&ndash;Z)</option>
+          <option value="temp-desc">Warmest first</option>
+          <option value="temp-asc">Coolest first</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No city matches that search. Try another name.</p>
+
+    <section id="cards" class="cards" aria-live="polite"></section>
+
+    <p class="note">The figures on this page are sample data written by hand for
+      practice, not a live forecast. They show the sort of numbers a real
+      weather page would show.</p>
+  </main>
+
+  <footer>
+    <p>A small practice page. Built with plain HTML, CSS and JavaScript &mdash; no frameworks.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
