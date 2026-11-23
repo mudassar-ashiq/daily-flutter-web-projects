@@ -18,6 +18,7 @@ They are kept separate — Flutter projects are in folders named
 | 12 | 15 Nov 2026 | Weather app | Weather models with fromJson/toJson, a service class, °C/°F switch, hourly and 5-day forecast, unit and widget tests |
 | 16 | 19 Nov 2026 | Habit tracker | Adding habits with a weekly target, marking days done, streaks, week view, saving with shared_preferences, unit and widget tests |
 | 18 | 21 Nov 2026 | Recipe book | Ten recipes with ingredients and steps, search by name or ingredient, category filters, favourites, add your own recipes, unit and widget tests |
+| 20 | 23 Nov 2026 | Chat UI | Chat list with search, unread counts and online dots, message bubbles with read ticks, sending messages with a typing reply, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
