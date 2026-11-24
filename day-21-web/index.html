@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Layout Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Layout Practice</p>
+      <nav class="main-nav">
+        <a href="#flexbox">Flexbox</a>
+        <a href="#grid">Grid</a>
+        <a href="#columns">Two columns</a>
+        <a href="#responsive">Responsive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro, two columns: text on the left, a small facts box on the right -->
+    <section class="intro">
+      <div class="intro-text">
+        <h1>Practising CSS layout</h1>
+        <p>This page is a set of small layout exercises. Each section uses a
+        different technique: flexbox for the header and the cards, grid for
+        the examples below, and a two-column layout for the notes at the end.
+        Resize the window to see how each part responds.</p>
+        <p class="intro-note">No frameworks, no images, just HTML, CSS and a
+        little JavaScript.</p>
+      </div>
+      <aside class="intro-box">
+        <h2>On this page</h2>
+        <ul>
+          <li>Flexbox navigation bar</li>
+          <li>Grid card section with a layout switch</li>
+          <li>Two-column article with a sidebar</li>
+          <li>Three-column footer that stacks on mobile</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Flexbox demo: three cards in a row -->
+    <section id="flexbox" class="section">
+      <h2>Flexbox row</h2>
+      <p class="section-intro">Three cards in a flex row. They share the
+      space evenly, wrap onto a new line when the screen gets narrow, and
+      stay the same height in a row.</p>
+      <div class="flex-row">
+        <article class="card">
+          <h3>justify-content</h3>
+          <p>Controls how the items are spaced along the main axis — for
+          example <code>space-between</code> pushes the first item to the
+          left and the last one to the right.</p>
+        </article>
+        <article class="card">
+          <h3>align-items</h3>
+          <p>Controls how the items line up across the row. The default,
+          <code>stretch</code>, is why these cards are all the same height
+          even though the text is not the same length.</p>
+        </article>
+        <article class="card">
+          <h3>flex-wrap</h3>
+          <p>With <code>wrap</code> turned on, items that do not fit move to
+          the next line instead of squeezing. That is what makes this row
+          work on a phone.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Grid demo, with a switch between grid and flex -->
+    <section id="grid" class="section">
+      <div class="section-head">
+        <div>
+          <h2>Grid examples</h2>
+          <p class="section-intro">Six small examples of grid in use. Use
+          the button to lay the same six boxes out with flexbox instead, and
+          compare how the two behave.</p>
+        </div>
+        <button id="layoutToggle" type="button">Show as flexbox</button>
+      </div>
+      <div id="exampleGrid" class="example-grid">
+        <div class="example-box"><strong>1</strong> Two equal columns</div>
+        <div class="example-box"><strong>2</strong> Three equal columns</div>
+        <div class="example-box wide"><strong>3</strong> One wide item, spanning two columns</div>
+        <div class="example-box"><strong>4</strong> Sidebar and content</div>
+        <div class="example-box"><strong>5</strong> Card gallery</div>
+        <div class="example-box"><strong>6</strong> Footer columns</div>
+      </div>
+      <p id="layoutNote" class="layout-note">Currently using grid:
+      three columns, with the wide box spanning two of them.</p>
+    </section>
+
+    <!-- Two-column article with a sidebar -->
+    <section id="columns" class="section">
+      <h2>Two-column article</h2>
+      <div class="two-column">
+        <article class="article-body">
+          <h3>When to use which one</h3>
+          <p>Flexbox is for one direction at a time — a row of buttons, a
+          navigation bar, a set of cards in a line. Grid is for two
+          directions at once — a page made of rows and columns, where an
+          item needs to span across more than one column.</p>
+          <p>Most pages use both. The header and the card row above are
+          flexbox. The example boxes and the footer below are grid. Neither
+          one replaces the other; they cover different shapes of layout.</p>
+          <h3>What I got wrong at first</h3>
+          <p>I kept setting fixed widths on everything, which broke the
+          layout on small screens. Letting the container decide the width —
+          <code>1fr</code> in grid, <code>flex: 1</code> in flexbox — and
+          only adding a media query for the real breakpoints made the page
+          hold together much better.</p>
+        </article>
+        <aside class="sidebar">
+          <h3>Quick reference</h3>
+          <dl>
+            <dt>display: flex</dt>
+            <dd>One row or one column of items.</dd>
+            <dt>display: grid</dt>
+            <dd>Rows and columns together.</dd>
+            <dt>gap</dt>
+            <dd>Space between items, same in both.</dd>
+            <dt>minmax()</dt>
+            <dd>Keeps a grid column between a minimum and a maximum width.</dd>
+          </dl>
+          <button id="sidebarToggle" type="button">Hide sidebar</button>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Responsive notes -->
+    <section id="responsive" class="section">
+      <h2>Responsive behaviour</h2>
+      <p class="section-intro">One breakpoint at 700px. Below it, the
+      header stacks, the intro becomes one column, the grid drops to a
+      single column, and the sidebar moves under the article.</p>
+      <div class="breakpoint-table">
+        <div class="breakpoint-row header-row">
+          <span>Screen width</span>
+          <span>Grid columns</span>
+          <span>Sidebar</span>
+        </div>
+        <div class="breakpoint-row">
+          <span>Over 700px</span>
+          <span>Three columns</span>
+          <span>Beside the article</span>
+        </div>
+        <div class="breakpoint-row">
+          <span>700px and under</span>
+          <span>One column</span>
+          <span>Under the article</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Layout Practice</h3>
+        <p>A small page built to practise flexbox, grid and responsive
+        layouts.</p>
+      </div>
+      <div>
+        <h3>Sections</h3>
+        <ul>
+          <li><a href="#flexbox">Flexbox row</a></li>
+          <li><a href="#grid">Grid examples</a></li>
+          <li><a href="#columns">Two-column article</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Built with</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>A little JavaScript</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">Day 21 — CSS layout practice page. November 2026.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

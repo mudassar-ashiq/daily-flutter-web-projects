@@ -34,6 +34,7 @@ They are kept separate — Flutter projects are in folders named
 | 15 | 18 Nov 2026 | Quiz page | Category picker, 20-second timer per question, score screen with answer review, best score in localStorage |
 | 17 | 20 Nov 2026 | Small shop page | Product list with prices in Rs, category filters and search, cart with quantities and running total, free delivery over Rs 1,000, cart saved in localStorage |
 | 19 | 22 Nov 2026 | Weather card page | Weather cards for eight Pakistani cities, °C/°F switch, search and sort, five-day forecast on each card, unit saved in localStorage |
+| 21 | 24 Nov 2026 | CSS layout practice page | Flexbox header and card row, grid examples with a switch to flexbox, two-column article with a sidebar, one responsive breakpoint |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also
