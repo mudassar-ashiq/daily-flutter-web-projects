@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-title">Focus Timer</p>
+      <p class="header-note">Work in short bursts, rest properly.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Timer card -->
+    <section class="timer-card" id="timerCard">
+      <div class="mode-tabs" role="tablist" aria-label="Timer mode">
+        <button class="mode-tab active" data-mode="focus" type="button">Focus</button>
+        <button class="mode-tab" data-mode="shortBreak" type="button">Short break</button>
+        <button class="mode-tab" data-mode="longBreak" type="button">Long break</button>
+      </div>
+
+      <p class="current-task" id="currentTask">No task selected — add one below.</p>
+      <p class="time-left" id="timeLeft">25:00</p>
+      <p class="mode-label" id="modeLabel">Focus session 1 of 4</p>
+
+      <div class="timer-buttons">
+        <button class="btn primary" id="startPauseBtn" type="button">Start</button>
+        <button class="btn" id="resetBtn" type="button">Reset</button>
+        <button class="btn" id="skipBtn" type="button">Skip</button>
+      </div>
+
+      <div class="session-dots" id="sessionDots" aria-label="Focus sessions done in this round">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <p class="sessions-done" id="sessionsDone">0 focus sessions finished today</p>
+    </section>
+
+    <!-- Tasks -->
+    <section class="section">
+      <h2>Today's tasks</h2>
+      <p class="section-intro">Add what you want to work on. Click a task
+      to make it the current one, tick it off when it is done.</p>
+
+      <form class="task-form" id="taskForm">
+        <label class="visually-hidden" for="taskInput">New task</label>
+        <input type="text" id="taskInput" placeholder="e.g. Revise OS chapter 4" maxlength="80" autocomplete="off">
+        <button class="btn primary" type="submit">Add task</button>
+      </form>
+
+      <ul class="task-list" id="taskList"></ul>
+      <p class="empty-note" id="emptyNote">Nothing here yet. Add your first task above.</p>
+      <button class="btn small" id="clearDoneBtn" type="button">Clear finished tasks</button>
+    </section>
+
+    <!-- Settings -->
+    <section class="section">
+      <h2>Timer lengths</h2>
+      <p class="section-intro">Change the lengths in minutes. They apply
+      the next time a session starts, and are saved on this device.</p>
+
+      <form class="settings-form" id="settingsForm">
+        <label>
+          Focus
+          <input type="number" id="focusLength" min="5" max="90" step="5" value="25">
+          <span>min</span>
+        </label>
+        <label>
+          Short break
+          <input type="number" id="shortBreakLength" min="1" max="30" step="1" value="5">
+          <span>min</span>
+        </label>
+        <label>
+          Long break
+          <input type="number" id="longBreakLength" min="5" max="60" step="5" value="15">
+          <span>min</span>
+        </label>
+        <button class="btn" type="submit">Save lengths</button>
+      </form>
+      <p class="settings-note" id="settingsNote">After 4 focus sessions you get a long break.</p>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <h2>How it works</h2>
+      <p>Pick a task, start the timer, and work on that one thing until the
+      time runs out. Then take the break — get up, stretch, drink some water.
+      After four focus sessions the break is longer. The page keeps your
+      tasks, lengths and today's session count in the browser, so closing
+      the tab does not lose them.</p>
+      <p>Press the space bar to start or pause the timer when you are not
+      typing in a box.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Focus Timer — plain HTML, CSS and JavaScript. No account, no tracking.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
