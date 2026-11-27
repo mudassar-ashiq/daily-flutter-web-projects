@@ -20,6 +20,7 @@ They are kept separate — Flutter projects are in folders named
 | 18 | 21 Nov 2026 | Recipe book | Ten recipes with ingredients and steps, search by name or ingredient, category filters, favourites, add your own recipes, unit and widget tests |
 | 20 | 23 Nov 2026 | Chat UI | Chat list with search, unread counts and online dots, message bubbles with read ticks, sending messages with a typing reply, unit and widget tests |
 | 22 | 25 Nov 2026 | Flashcards app | Three starter decks, tap to flip a card, mark known or not with a summary, add your own decks and cards, saving with shared_preferences, unit and widget tests |
+| 24 | 27 Nov 2026 | Workout tracker | Log workouts with exercises, sets, reps and weight, this-week summary with total volume, saving with shared_preferences, unit and widget tests |
 
 ## Web (HTML, CSS, JavaScript)
 
