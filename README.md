@@ -38,6 +38,7 @@ They are kept separate — Flutter projects are in folders named
 | 19 | 22 Nov 2026 | Weather card page | Weather cards for eight Pakistani cities, °C/°F switch, search and sort, five-day forecast on each card, unit saved in localStorage |
 | 21 | 24 Nov 2026 | CSS layout practice page | Flexbox header and card row, grid examples with a switch to flexbox, two-column article with a sidebar, one responsive breakpoint |
 | 23 | 26 Nov 2026 | Focus timer page | Focus, short break and long break timer, task list with a current task, sessions finished today, timer lengths saved in localStorage |
+| 25 | 28 Nov 2026 | Monthly budget tracker | Set a monthly income, add expenses by category, spent and remaining totals, budget-used bar, category breakdown, list with filter and delete, saved in localStorage |
 
 Each project has its own README with run instructions.
 The full Flutter project (with icons and platform files) is also

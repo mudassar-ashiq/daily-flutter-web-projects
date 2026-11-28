@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Monthly Budget Tracker</h1>
+        <p class="subtitle" id="monthLabel">November 2026</p>
+      </div>
+      <button class="btn btn-ghost" id="newMonthBtn" type="button">Start new month</button>
+    </header>
+
+    <section class="summary" aria-label="Budget summary">
+      <div class="card">
+        <span class="card-label">Monthly income</span>
+        <span class="card-value" id="incomeValue">Rs 0</span>
+        <button class="link-btn" id="editIncomeBtn" type="button">Set income</button>
+      </div>
+      <div class="card">
+        <span class="card-label">Spent so far</span>
+        <span class="card-value" id="spentValue">Rs 0</span>
+        <span class="card-note" id="expenseCount">0 expenses</span>
+      </div>
+      <div class="card">
+        <span class="card-label">Remaining</span>
+        <span class="card-value" id="remainingValue">Rs 0</span>
+        <span class="card-note" id="remainingNote">Set your income to see this</span>
+      </div>
+    </section>
+
+    <div class="progress-wrap">
+      <div class="progress-head">
+        <span>Budget used</span>
+        <span id="percentLabel">0%</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+
+    <div class="columns">
+      <section class="panel">
+        <h2>Add an expense</h2>
+        <form id="expenseForm">
+          <label for="descInput">What was it?</label>
+          <input type="text" id="descInput" placeholder="e.g. Weekly groceries" maxlength="60" required>
+
+          <label for="amountInput">Amount (Rs)</label>
+          <input type="number" id="amountInput" placeholder="e.g. 2500" min="1" step="1" required>
+
+          <label for="categorySelect">Category</label>
+          <select id="categorySelect">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Bills">Bills</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <p class="error" id="formError" hidden></p>
+          <button class="btn btn-primary" type="submit">Add expense</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Spending by category</h2>
+        <div id="categoryList">
+          <p class="empty">No expenses yet. Add one and the breakdown will show here.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Expenses</h2>
+      <div class="list-head">
+        <label for="filterSelect">Show</label>
+        <select id="filterSelect">
+          <option value="all">All categories</option>
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Bills">Bills</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <ul class="expense-list" id="expenseList"></ul>
+      <p class="empty" id="listEmpty">Nothing here yet. Your expenses will appear in this list.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Your income and expenses are saved in this browser only (localStorage), nothing is sent anywhere.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
